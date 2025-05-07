@@ -1,0 +1,60 @@
+body {
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    align-items: center;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[id="generate"] {
+    background-color: #4cafaa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+button[id="generate"]:hover {
+    background-color: #45a098;
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[id="copy"] {
+    background-color: #4cafaa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[id="copy"]:hover {
+    background-color: #45a098;
+}
