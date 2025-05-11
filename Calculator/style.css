@@ -1,3 +1,18 @@
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+   
+
+h1 {
+    
+    text-align: center;
+}
 .calculator {
     display: flex;
     border: 1px solid black;
@@ -7,14 +22,17 @@
     margin: 0 auto;
 }
 
-.calculator #display {
+input#display {
     background-color: #363636;
     color: white;
     height: 50px;
-    padding: 10px;
+    padding: 0 10px;
+    margin: 0;
     text-align: right;
     font-size: 20px;
 }
+
+
 
 .calculator .buttons {
     display: grid;
@@ -24,31 +42,45 @@
         "four five six add"
         "seven eight nine subtract"
         "decimal zero equals equals";
-    gap: 1px;
 }
 
 .btn {
+    padding: 0;
     background-color: #e6f7fc;
     text-align: center;
     line-height: 30px;
-    font-size: 20px;
-    border: 1px solid #ccc;
     width: 50px;
     height: 50px;
+    font-size: 18px;
+    border: 1px solid #ccc;
 }
 
 .btn:hover {
     background-color: #d1e7dd;
 }
 
-
-.btn[id="clear"] {
-    grid-column: span 2;
+.btn#clear       {
+    grid-area: clear;
+    width: 100%; 
 }
-
-.btn[id="equals"] {
-    grid-column: span 2;
+.btn#equals      {
+    grid-area: equals; 
+    width: 100%;
 }
-
-
+.btn#backspace   { grid-area: backspace; }
+.btn#divide      { grid-area: divide; }
+.btn#multiply    { grid-area: multiply; }
+.btn#subtract    { grid-area: subtract; }
+.btn#add         { grid-area: add; }
+.btn#decimal     { grid-area: decimal; }
+.btn#zero        { grid-area: zero; }
+.btn#one         { grid-area: one; }
+.btn#two         { grid-area: two; }
+.btn#three       { grid-area: three; }
+.btn#four        { grid-area: four; }
+.btn#five        { grid-area: five; }
+.btn#six         { grid-area: six; }
+.btn#seven       { grid-area: seven; }
+.btn#eight       { grid-area: eight; }
+.btn#nine        { grid-area: nine; }
 
