@@ -1,0 +1,54 @@
+.calculator {
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.calculator #display {
+    background-color: #363636;
+    color: white;
+    height: 50px;
+    padding: 10px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.calculator .buttons {
+    display: grid;
+    grid-template-areas: 
+        "clear clear backspace divide"
+        "one two three multiply"
+        "four five six add"
+        "seven eight nine subtract"
+        "decimal zero equals equals";
+    gap: 1px;
+}
+
+.btn {
+    background-color: #e6f7fc;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    width: 50px;
+    height: 50px;
+}
+
+.btn:hover {
+    background-color: #d1e7dd;
+}
+
+
+.btn[id="clear"] {
+    grid-column: span 2;
+}
+
+.btn[id="equals"] {
+    grid-column: span 2;
+}
+
+
+
