@@ -1,5 +1,10 @@
 body {
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #eaeaea;
 }
 
 h1 {
@@ -9,7 +14,7 @@ h1 {
 
 .container {
     display: flex;
-    width: 50%;
+    width: 300px;
     margin: 10px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -26,7 +31,7 @@ input[type="number"] {
     border-radius: 4px;
 }
 
-button[id="generate"] {
+input[type="button"] {
     background-color: #4cafaa;
     color: white;
     padding: 10px 20px;
@@ -34,7 +39,7 @@ button[id="generate"] {
     border-radius: 4px;
 }
 
-button[id="generate"]:hover {
+input[type="button"]:hover {
     background-color: #45a098;
 }
 
@@ -46,7 +51,7 @@ input[type="text"] {
     border-radius: 4px;
 }
 
-button[id="copy"] {
+button[id="copyButton"] {
     background-color: #4cafaa;
     color: white;
     padding: 10px 20px;
@@ -55,6 +60,6 @@ button[id="copy"] {
     cursor: pointer;
 }
 
-button[id="copy"]:hover {
+button[id="copyButton"]:hover {
     background-color: #45a098;
 }
