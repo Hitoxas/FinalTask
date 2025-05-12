@@ -1,38 +1,41 @@
 body {
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
-   
 
 h1 {
-    
     text-align: center;
+    margin-bottom: 10px;
 }
+
 .calculator {
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: flex;
-    border: 1px solid black;
     flex-direction: column;
-    width: 200px;
-    height: 300px;
-    margin: 0 auto;
+    width: 240px;
 }
 
 input#display {
     background-color: #363636;
     color: white;
     height: 50px;
-    padding: 0 10px;
+    padding: 0 30px;
     margin: 0;
+    width: 100%;
     text-align: right;
     font-size: 20px;
+    border: none;
+    box-sizing: border-box;
 }
-
-
 
 .calculator .buttons {
     display: grid;
@@ -42,31 +45,30 @@ input#display {
         "four five six add"
         "seven eight nine subtract"
         "decimal zero equals equals";
+    gap: 4px;
+    padding: 20px 20px;
+    background-color: #5f5d5d;
 }
 
 .btn {
-    padding: 0;
     background-color: #e6f7fc;
     text-align: center;
     line-height: 30px;
-    width: 50px;
-    height: 50px;
     font-size: 18px;
-    border: 1px solid #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    transition: background-color 0.2s;
 }
 
 .btn:hover {
-    background-color: #d1e7dd;
+    background-color: #cde4e9;
 }
 
-.btn#clear       {
-    grid-area: clear;
-    width: 100%; 
-}
-.btn#equals      {
-    grid-area: equals; 
-    width: 100%;
-}
+.btn#clear       { grid-area: clear; width: 100%; }
+.btn#equals      { grid-area: equals; width: 100%; }
 .btn#backspace   { grid-area: backspace; }
 .btn#divide      { grid-area: divide; }
 .btn#multiply    { grid-area: multiply; }
@@ -83,4 +85,5 @@ input#display {
 .btn#seven       { grid-area: seven; }
 .btn#eight       { grid-area: eight; }
 .btn#nine        { grid-area: nine; }
+
 

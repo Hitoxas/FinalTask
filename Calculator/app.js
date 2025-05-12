@@ -1,7 +1,7 @@
 const display = document.getElementById('display');
 const buttons = document.querySelectorAll('.btn');
 
-// Kintamieji saugoti pirmą ir antrą skaičių bei pasirinktą veiksmą
+// Kintamieji saugoti pirmą ir antrą skaičių ir pasirinktą veiksmą
 let firstNumber = null;
 let secondNumber = null;
 let currentOperator = null;
